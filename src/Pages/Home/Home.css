@@ -1,0 +1,118 @@
+
+.loader {
+  width: 1300px;
+  height: 20px;
+  margin: 0 auto;
+  background: 
+    linear-gradient(#805aed 0 0) left -40px top 0/40px 20px,
+    linear-gradient(#ddd 0 0) center/100% 50%; 
+  background-repeat: no-repeat;
+  animation: l5 1s infinite linear;
+}
+@keyframes l5 {
+  100% {background-position: right -40px top 0,center}
+}
+
+.productlist {
+  padding: 30px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.productlist:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.search-container {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  width: 100%;
+  max-width: 620px;
+  height: 50px;
+}
+
+.search-input {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+  border: 1.5px solid lightgrey;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+}
+
+.search-icon {
+  width: 45px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  background-color: #000;
+  font-size: 1.8rem;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.userdata {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.productlist img {
+  width: 200px;
+  height: 200px;
+  mix-blend-mode: multiply;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+.productlist{
+ max-width: 500px;
+}
+  .search-container {
+    max-width: 500px;
+  }
+  .search-input, .search-icon {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+ 
+  .productlist {
+   max-width: 200px;
+  }
+  .productlist img {
+    width: 150px;
+    height: 150px;
+    mix-blend-mode: multiply;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .search-container {
+    max-width: 300px;
+  }
+
+
+@media only screen and (max-width: 375px) {
+
+  .search-input{
+    width: 50%;
+  }
+}
+}

@@ -1,0 +1,145 @@
+.productmain {
+  padding: 30px;
+  border-radius: 5px;
+  margin-Top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* .productmain:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+.pflex {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.left-image {
+  padding: 50px;
+  margin-right: 30px;
+}
+
+.left-image>img {
+  max-width: 300px;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+}
+
+.productheading {
+  font-size: 1.8rem;
+  max-width: 500px;
+}
+
+.productdesc {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.prd {
+  font-weight: 600;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .productmain {
+    max-width: 700px;
+  }
+
+  .left-image {
+    padding: 5px;
+    margin-right: 3px;
+  }
+
+  .left-image>img {
+    max-width: 200px;
+    mix-blend-mode: multiply;
+    object-fit: cover;
+  }
+
+  .productheading {
+    font-size: 1.2rem;
+  }
+
+  .productdesc {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .prd {
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .productmain {
+    max-width: 500px;
+  }
+
+  .left-image {
+    padding: 5px;
+    margin-right: 3px;
+  }
+
+  .left-image>img {
+    max-width: 200px;
+    mix-blend-mode: multiply;
+    object-fit: cover;
+  }
+
+  .productheading {
+    font-size: 1.2rem;
+  }
+
+  .productdesc {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .prd {
+    font-weight: 600;
+  }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+
+  .productmain {
+    max-width: 300px;
+  }
+
+  .pflex {
+    display: block;
+  }
+
+  .left-image {
+    padding: 0;
+    margin-right: 0;
+  }
+
+  .left-image>img {
+    max-width: 100px;
+    mix-blend-mode: multiply;
+    object-fit: cover;
+  }
+
+  .product-content {
+    flex-direction: column;
+  }
+
+  .productheading {
+    font-size: 1rem;
+  }
+
+  .productdesc {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+
+  .prd {
+    font-weight: 600;
+  }
+}

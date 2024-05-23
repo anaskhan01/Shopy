@@ -1,0 +1,91 @@
+#header {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+ul.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu > li > a {
+  padding: 30px 10px;
+}
+ul > li > a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #000;
+  display: block;
+}
+ul > li > a:hover {
+  color: #805aed;
+}
+.submenu {
+  display: none;
+  width: 200px;
+  background-color: #fff;
+  border-top: 3px solid #a435f0;
+  position: absolute;
+  z-index: 9999;
+}
+.submenu li {
+  position: relative;
+}
+.submenu li a {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.submenu li a:hover {
+  background-color: #f5f5f5;
+}
+
+.menu li:hover > .submenu {
+  display: block;
+}
+.btnwishlist {
+  font-size: 15px;
+  background: transparent;
+  border: none;
+  color: #000;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.cart {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+.logo{
+padding: 25px;
+}
+.btnwishlist{
+padding: 20px;
+}
+  ul.menu {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 10px;
+  }
+ 
+  .menu > li > a {
+    padding: 10px;
+  }
+ 
+  .submenu {
+    width: auto;
+  }
+}
